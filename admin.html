@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/adminStyle.css">
+    <script src="js/admin.js" type="module"></script>
+</head>
+
+<body>
+    <h2 id="header">Admin page</h2>
+    <form id="inputForm">
+        <div class="inputFields">
+            <div class="formGroup">
+                <label for="bookTitle">Book Title</label>
+                <input type="text" id="bookTitle" placeholder="Book title">
+            </div>
+
+            <div class="formGroup">
+                <label for="bookAuthor">Book Author</label>
+                <input type="text" id="bookAuthor" placeholder="Book author">
+            </div>
+
+            <div class="formGroup">
+                <label for="bookIsbn">Book ISBN</label>
+                <input type="text" id="bookIsbn" placeholder="000-0-00-000000-0">
+            </div>
+
+            <div class="formGroup">
+                <label for="bookCategory">Book Category</label>
+                <input type="text" id="bookCategory" placeholder="Book category">
+            </div>
+
+            <div class="formGroup">
+                <label for="bookCategory">Book Quantity</label>
+                <input type="text" id="bookQuantity" placeholder="Book quantity">
+            </div>
+
+            <div class="formGroup">
+                <label>Cover Image URL</label>
+                <input type="text" id="bookCover" placeholder="D:\\Pictures\\pic.png">
+            </div>
+            
+            <!-- <div class="formGroup">
+                <label for="bookImage">Book Cover</label>
+                <input type="file" id="bookImage" accept="image/*">
+            </div>
+
+            <img id="preview" width="120"> -->
+
+        </div>
+
+        <div class="formContent">
+            <input type="checkbox" id="avilable" class="checkedBox">
+            <label for="avilable">Available</label>
+            <input type="checkbox" id="notAvilable" class="checkedBox">
+            <label for="notAvilable">Not Available</label>
+        </div>
+
+    </form>
+
+
+    <div class="formContent">
+        <input type="button" value="+ Add new book" id="addButton">
+    </div>
+
+
+    <div id="container">
+        <table id="booksTable">
+            <tr>
+                <th>Book ID</th>
+                <th>Book title</th>
+                <th>Book author</th>
+                <th>Book isbn</th>
+                <th>Book category</th>
+                <th>Book quantity</th>
+                <th>Book avilabilty</th>
+                <th>Cover Image</th>
+
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <div id="noData"> There is no books yet!</div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

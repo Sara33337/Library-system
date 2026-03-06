@@ -1,0 +1,78 @@
+body{
+    background-color: #e8ebeb;
+}
+#header{
+    text-align: center;
+    font-family: Cooper;
+    font-size: 40px;
+    color: #15173D;
+}
+.details{
+    display: -webkit-box;
+    width: 100%;
+}
+.bockImage{
+    height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 20px;
+  
+}
+
+.bookDetails{
+    margin-top: 40px;
+    margin-left: 200px;
+
+}
+
+.bookTitle{
+    font-size: 30px;
+    font-family: Cooper;
+    color:  #15173D;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.infoLabel{
+    font-size: 25px;
+    color: #212450;
+    font-weight: 600;
+    margin:10px
+  
+}
+.bookInfo{
+    font-size: 25px;
+    color: #212450;
+    font-weight: 400;
+    margin:10px
+}
+
+.actions{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.borrowBtn ,.returnBtn {
+    background: #2196F3;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.borrowBtn:hover{
+    background: #146cb4;
+}
+
+.returnBtn{
+    background: #f44336;
+}
+.returnBtn:hover{
+    background: #a1312a;
+}
+
+.borrowed{
+    background: green !important;
+}
