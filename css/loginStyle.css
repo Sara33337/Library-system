@@ -1,0 +1,70 @@
+body {
+    background-color: #e8ebeb;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; /* Added to center vertically on the whole screen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 350px; /* Using fixed width is safer for login boxes than 40% */
+    background-color: #15173D;
+    border-radius: 25px;
+    padding: 40px 30px; /* More vertical padding */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Adds depth */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional Header Style */
+.container h2 {
+    color: white;
+    font-family: 'Cooper', serif;
+    margin-bottom: 20px;
+}
+
+.inputField {
+    height: 45px; /* Slightly taller for better touch/click feel */
+    width: 100%;  /* Fill the container width */
+    box-sizing: border-box; /* Ensures padding doesn't break the width */
+    border: 2px solid transparent;
+    background-color: rgba(234, 234, 234, 0.9);
+    border-radius: 12px;
+    padding-left: 15px; 
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #6f7092;
+    background-color: #ffffff;
+}
+
+.button {
+    color: white; /* Changed to white for better contrast */
+    font-family: 'Cooper', serif;
+    font-size: 18px;
+    background-color: #41427e; /* Brighter purple/blue */
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #6163e1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(0);
+}

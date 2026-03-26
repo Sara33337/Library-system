@@ -14,6 +14,22 @@ body{
     text-align: center;
 }
 
+
+.welcome{
+    margin-left: 20px;
+    padding: 0;
+}
+h2{
+    font-family: cooper;
+
+}
+.userData{
+    font-weight: bold;
+    color: #15173D;
+    font-size: 18px;
+}
+
+
 #noData{
     text-align: center;
     font-family: Cooper;
@@ -24,7 +40,7 @@ body{
 .allBooks{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    gap: 25px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -44,7 +60,7 @@ body{
 
 .bookCard img{
     width: 100%;
-    height: 240px;
+    height: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -72,7 +88,8 @@ body{
 }
 
 .borrowBtn ,.returnBtn {
-    background: #2196F3;
+    width: 120px;
+    background: #15173D;
     border: none;
     color: white;
     padding: 6px 14px;
@@ -81,16 +98,16 @@ body{
 }
 
 .borrowBtn:hover{
-    background: #146cb4;
+    background: rgb(52, 108, 154)
 }
 
 .returnBtn{
-    background: #f44336;
+    background: #2e3169;
 }
 .returnBtn:hover{
-    background: #a1312a;
+    background: #6568a1;
 }
 
 .borrowed{
-    background: green !important;
+    background: rgb(55, 89, 55) !important;
 }

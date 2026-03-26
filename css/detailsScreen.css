@@ -21,10 +21,19 @@ body{
 
 .bookDetails{
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 70px;
 
 }
 
+.bookDescription{
+    font-size: 28px;
+    font-weight: 500;
+    width: 60%;
+    color: #212450;
+
+   
+
+}
 .bookTitle{
     font-size: 30px;
     font-family: Cooper;
@@ -39,11 +48,12 @@ body{
     margin:10px
   
 }
+
 .bookInfo{
     font-size: 25px;
     color: #212450;
     font-weight: 400;
-    margin:10px
+    margin-top:15px
 }
 
 .actions{
@@ -52,9 +62,19 @@ body{
     justify-content: center;
     gap: 10px;
 }
+.wariningMessage{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px;
+    color: rgb(133, 8, 8);
+    font-family: 'Courier New', Courier, monospace;
+}
 
-.borrowBtn ,.returnBtn {
-    background: #2196F3;
+.borrowBtn{
+    width: 180px;
+    background: #15173D;
     border: none;
     color: white;
     padding: 6px 14px;
@@ -63,16 +83,16 @@ body{
 }
 
 .borrowBtn:hover{
-    background: #146cb4;
+    background: rgb(52, 108, 154)
 }
 
 .returnBtn{
-    background: #f44336;
+    background: #2e3169;
 }
 .returnBtn:hover{
-    background: #a1312a;
+    background: #6568a1;
 }
 
 .borrowed{
-    background: green !important;
+    background: rgb(55, 89, 55) !important;
 }

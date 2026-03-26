@@ -1,8 +1,9 @@
 class Book {
     static books = [];
 
-    constructor(id, title, author, isbn, category, quantity, avilable , 
-        coverImg = "eBook.jpg" , isBorrowed = false )  {
+    constructor(id, title, author, isbn, category, quantity,
+        descreption ,  avilable , 
+        coverImg = "eBook.jpg" , isBorrowed = false , borrowedBy)  {
 
         this.validation(title, "string", "title");
         this.validation(author, "string", "author");
@@ -10,6 +11,7 @@ class Book {
         this.validation(category, "string", "category");
         this.validation(quantity, "number", "quantity");
         this.validation(avilable, "boolean", "avilable");
+        this.validation(descreption , "string" , "discreption")
 
         this.id = id;
         this.title = title;
@@ -18,8 +20,10 @@ class Book {
         this.category = category;
         this.quantity = quantity;
         this.avilable = avilable;
+        this.descreption = descreption;
         this.coverImg = coverImg;
         this.isBorrowed = isBorrowed;
+        this.borrowedBy = borrowedBy;
     
 
     };
@@ -64,7 +68,7 @@ class Book {
         }
     }
 
-    static updateBook(id, title, author, isbn, category, q) {
+    static updateBook(id, title, author, isbn, category, q, description , coverImg) {
         let book = this.books.find(book => book.id == id);
         if (book) {
             book.title = title;
@@ -72,6 +76,8 @@ class Book {
             book.isbn = isbn;
             book.category = category;
             book.quantity = q;
+            book.description = description;
+            book.coverImg = coverImg;
             console.log("Updated successfully");
             localStorage.setItem("books", JSON.stringify(this.books));
             return this.books;

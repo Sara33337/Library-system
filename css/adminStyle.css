@@ -47,8 +47,19 @@ body{
     margin: 5px;  
 }
 
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Pushes content to the right */
+    margin-bottom: 20px;       /* Space between button and table */
+    margin-right: 150px;        /* Optional: align with table edge */
+}
 
-#addButton{
+/* Ensure the button doesn't stretch */
+#addButton {
+    align-self: flex-end;
+}
+
+#addButton, #addBook{
     text-align: center;
     height: 35px;
     width: 130px;
@@ -60,7 +71,11 @@ body{
     background-color: #15173D;
     color: white;
 }
+
 #addButton:hover{
+    background-color: #282b57;
+}
+#addBook:hover{
     background-color: #282b57;
 }
 
@@ -123,23 +138,23 @@ body{
     transition: background-color 0.3s ease;
 }
 
-/* زر التحديث */
-#booksTable button:nth-child(1) {
+/* Update Button */
+.btn-update {
     background-color: #2196F3;
     color: white;
 }
 
-#booksTable button:nth-child(1):hover {
+.btn-update:hover {
     background-color: #0b7dda;
 }
 
-/* زر الحذف */
-#booksTable button:nth-child(2) {
+/* Delete Button */
+.btn-delete {
     background-color: #f44336;
     color: white;
 }
 
-#booksTable button:nth-child(2):hover {
+.btn-delete:hover {
     background-color: #da190b;
 }
 
